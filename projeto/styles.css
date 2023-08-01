@@ -61,19 +61,13 @@ body{
     text-transform: capitalize;
     display: flex;
     justify-content: space-between; /* Alinha o texto e os botões à esquerda e à direita */
-    transition: background-color 0.5s ease;
+    transition: 1s;
     align-items: center;
 }
 
 #toDoList button + button {
     margin-left: 10px; /* Adicione o espaço entre os botões */
 }
-
-.botao { 
-    display: flex;
-    justify-content: flex-end;
-}
-
 
 #content--body li{
     border-radius: 1rem;
@@ -87,7 +81,7 @@ body{
     padding-left: 1rem;
 }
 
-#btnOk{
+.btnOk{
     border: none;
     background-color: rgb(56, 180, 56);
     color: white;
@@ -100,12 +94,11 @@ body{
     transition: .4s;
 }
 
-#btnOk:hover{
+.btnOk:hover{
     background-color: rgb(21, 121, 21);
 }
 
-#btnClose{
-    border: none;
+.btnClose{
     background-color: rgb(192, 47, 47);
     color: white;
     padding: .4rem .8rem;
@@ -117,6 +110,6 @@ body{
     transition: .4s;
 }
 
-#btnClose:hover{
-    background-color: rgb(94, 3, 3);
+.btnClose:hover{
+    background-color: rgb(31, 0, 0);
 }
