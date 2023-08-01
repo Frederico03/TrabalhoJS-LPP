@@ -55,14 +55,25 @@ body{
     padding: 0;
 }
 
-#toDoList li{
+#toDoList li {
     list-style-type: none;
     font-size: 1.4rem;
     text-transform: capitalize;
     display: flex;
+    justify-content: space-between; /* Alinha o texto e os botões à esquerda e à direita */
+    transition: background-color 0.5s ease;
     align-items: center;
-    justify-content: space-between;
 }
+
+#toDoList button + button {
+    margin-left: 10px; /* Adicione o espaço entre os botões */
+}
+
+.botao { 
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 #content--body li{
     border-radius: 1rem;
@@ -71,7 +82,7 @@ body{
 
 #toDoList li:hover{
     background-color: aliceblue;
-    transition: .4s;
+    transition: 1s;
     border-radius: 1rem;
     padding-left: 1rem;
 }
@@ -79,18 +90,33 @@ body{
 #btnOk{
     border: none;
     background-color: rgb(56, 180, 56);
-    color: var(--color-white);
+    color: white;
     padding: .4rem .8rem;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: .4s;
 }
 
-#btn-ok:hover{
-    background-color: var(--color-green2);
+#btnOk:hover{
+    background-color: rgb(21, 121, 21);
+}
+
+#btnClose{
+    border: none;
+    background-color: rgb(192, 47, 47);
+    color: white;
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btnClose:hover{
+    background-color: rgb(94, 3, 3);
 }
