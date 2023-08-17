@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./assets/fonts/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Checklist System</title>
+</head>
+<body>
+    
+        <h1>Minha Checklist</h1>
+        
+        <div class="content">
+            <div class="containerAdd">
+                <!-- Dentro da div "checklist-container" -->
+                <div class="input-container">
+                    <label class="input-label" for="taskInput">Tarefa:</label>
+                    <input type="text" class="input-field" id="taskInput" placeholder="Digite uma nova tarefa">
+                </div>
+                <div class="input-container">
+                    <label class="input-label" for="priorityInput">Prioridade:</label>
+                    <select id="priorityInput">
+                        <option value="1">1 - Baixa</option>
+                        <option value="2">2 - Média-Baixa</option>
+                        <option value="3" selected>3 - Média</option>
+                        <option value="4">4 - Média-Alta</option>
+                        <option value="5">5 - Alta</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="dateInput" class="input-label">Data: </label>
+                    <input type="date" id="dateInput">
+                </div>
+                <button id="addButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                    </svg>
+                </button>
+            </div>
+            <ul id="checklist">
+            </ul>
+        </div>  
+    <script src="index.js"></script>
+</body>
+</html>
